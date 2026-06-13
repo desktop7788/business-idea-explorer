@@ -1,0 +1,17 @@
+{
+  "name": "business-idea-explorer",
+  "description": "事業・Webサービス・アプリのアイデアを探索・評価する定型ワークフロー（全7フェーズ）。既に金を払っているのに未解決のペイン発掘→商材→事業モデルと値決め→最初の100人を集める施策→検証設計まで、同じ評価軸・同じ出力で出す。",
+  "version": "1.0.0",
+  "author": {
+    "name": "tatsu"
+  },
+  "license": "MIT",
+  "keywords": [
+    "business-ideas",
+    "idea-validation",
+    "market-research",
+    "pain-mining",
+    "pricing",
+    "go-to-market"
+  ]
+}

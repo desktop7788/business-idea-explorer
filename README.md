@@ -28,26 +28,47 @@
 
 ## インストール
 
-### Cowork（Claudeデスクトップ）
-`dist/business-idea-explorer.skill` をダウンロードし、Claude に渡して「Save skill」でインストール。以後、「〇〇の領域で事業アイデア探したい」「このアイデア評価して」等で自動的に起動する。
+### Claude Code（ワンクリック・プラグイン）
+この repo はプラグインマーケットプレイスとして公開されている。Claude Code で：
 
-### Claude Code
-`SKILL.md` と `references/` を、スキルとして読み込めるディレクトリ（例：`~/.claude/skills/business-idea-explorer/`）に配置する。
+```
+/plugin marketplace add <あなたのGitHubユーザー名>/business-idea-explorer
+/plugin install business-idea-explorer@tatsu-tools
+```
+
+更新は repo に push したあと、利用側で `/plugin marketplace update`。
+
+### Cowork（Claudeデスクトップ）
+`dist/business-idea-explorer.skill` をダウンロードし、Claude に渡して「Save skill」でインストール。
+
+### 手動（スキルだけ使う）
+`skills/business-idea-explorer/` をスキル読み込みディレクトリ（例：`~/.claude/skills/business-idea-explorer/`）にコピー。
+
+インストール後は、「〇〇の領域で事業アイデア探したい」「このアイデア評価して」等で自動的に起動する。
 
 ## 構成
 
 ```
-business-idea-explorer/
-├── SKILL.md                  # スキル本体（ワークフロー・評価軸・出力テンプレ）
-├── references/
-│   └── playbook.md           # 情報源・値決めアンカー・検証質問バンク
-└── dist/
-    └── business-idea-explorer.skill   # 梱包済み（Coworkインストール用）
+business-idea-explorer/                 # repo root（= マーケットプレイス root = プラグイン root）
+├── .claude-plugin/
+│   ├── marketplace.json                # マーケットプレイス定義（プラグイン一覧）
+│   └── plugin.json                     # プラグイン マニフェスト
+├── skills/
+│   └── business-idea-explorer/
+│       ├── SKILL.md                    # スキル本体（ワークフロー・評価軸・出力テンプレ）
+│       └── references/
+│           └── playbook.md             # 情報源・値決めアンカー・検証質問バンク
+├── dist/
+│   └── business-idea-explorer.skill    # 梱包済み（Coworkインストール用）
+├── README.md
+└── LICENSE
 ```
+
+`skills/` 配下は Claude Code が自動検出するため、`plugin.json` でスキルを明示宣言する必要はない。
 
 ## 再パッケージ
 
-`SKILL.md` / `references/` を編集したら、skill-creator の `package_skill` で `.skill` を作り直せる。
+`skills/business-idea-explorer/` を編集したら、Cowork配布用の `.skill` は skill-creator の `package_skill` で作り直せる。プラグインとしての配布は repo に push するだけで反映される。
 
 ## ライセンス
 

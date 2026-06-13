@@ -1,0 +1,14 @@
+{
+  "name": "tatsu-tools",
+  "owner": {
+    "name": "tatsu"
+  },
+  "plugins": [
+    {
+      "name": "business-idea-explorer",
+      "source": "./",
+      "description": "事業・Webサービス・アプリのアイデアを、毎回同じ評価軸・同じ出力で探索・評価するスキル（全7フェーズ）。ペイン発掘→商材→事業モデル/値決め→最初の100人→検証設計。",
+      "version": "1.0.0"
+    }
+  ]
+}
