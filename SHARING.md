@@ -1,7 +1,7 @@
 # business-idea-explorer 紹介文（コピー用）
 
 リポジトリ: https://github.com/desktop7788/business-idea-explorer
-.skill 直リンク（Cowork用）: https://github.com/desktop7788/business-idea-explorer/raw/main/dist/business-idea-explorer.skill
+.skill 直リンク（Cowork用）: https://github.com/desktop7788/business-idea-explorer/releases/latest/download/business-idea-explorer.skill
 
 ---
 
@@ -20,7 +20,7 @@
 領域を伝えるだけで、〈既にお金を払ってるのに解決されてない不満〉を起点に、商材アイデア → 事業モデルと値段の付け方 → 最初の100人の集め方 → 検証のやり方まで、毎回ブレない手順で出してくれます。コード不要、Claude Desktop の Cowork で使えます。
 
 導入は3ステップ：
-1. スキルファイルをダウンロード → https://github.com/desktop7788/business-idea-explorer/raw/main/dist/business-idea-explorer.skill
+1. スキルファイルをダウンロード → https://github.com/desktop7788/business-idea-explorer/releases/latest/download/business-idea-explorer.skill
 2. Claude Desktop の Cowork の会話に、そのファイルを添付（ドラッグ＆ドロップ）
 3. 表示される「Save skill」を押すだけ
 
@@ -28,7 +28,7 @@
 
 ### 導入手順（そのまま案内に使える）
 
-1. **ダウンロード**：[business-idea-explorer.skill](https://github.com/desktop7788/business-idea-explorer/raw/main/dist/business-idea-explorer.skill) を開く（自動でダウンロードされます）
+1. **ダウンロード**：[business-idea-explorer.skill](https://github.com/desktop7788/business-idea-explorer/releases/latest/download/business-idea-explorer.skill) を開く（自動でダウンロードされます）
 2. **読み込み**：Claude Desktop を開き、Cowork の会話にこの `.skill` ファイルを添付（またはドラッグ＆ドロップ）
 3. **保存**：チャットに出る「**Save skill**」ボタンを押す → 設定 → Capabilities に追加されます
 4. **使う**：「新しいWebサービスの事業アイデアを探したい」「このアイデア評価して」などと話しかける
@@ -78,7 +78,7 @@
 
 **使い方**
 
-- **Cowork（Claude Desktop・コード不要）**：[business-idea-explorer.skill](https://github.com/desktop7788/business-idea-explorer/raw/main/dist/business-idea-explorer.skill) をダウンロード → Cowork の会話に添付 → 「Save skill」。
+- **Cowork（Claude Desktop・コード不要）**：[business-idea-explorer.skill](https://github.com/desktop7788/business-idea-explorer/releases/latest/download/business-idea-explorer.skill) をダウンロード → Cowork の会話に添付 → 「Save skill」。
 - **Claude Code**：`/plugin marketplace add desktop7788/business-idea-explorer` → `/plugin install business-idea-explorer@tatsu-tools` → `/reload-plugins`。
 
 導入後は「〇〇の領域で事業アイデアを探したい」「このアイデア評価して」などと話しかけるだけで起動します。
