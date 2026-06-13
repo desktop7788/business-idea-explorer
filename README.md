@@ -38,8 +38,10 @@
 
 更新は repo に push したあと、利用側で `/plugin marketplace update`。
 
-### Cowork（Claudeデスクトップ）
-`dist/business-idea-explorer.skill` をダウンロードし、Claude に渡して「Save skill」でインストール。
+### Cowork（Claudeデスクトップ・コード不要）
+1. [business-idea-explorer.skill](https://github.com/desktop7788/business-idea-explorer/raw/main/dist/business-idea-explorer.skill) をダウンロード
+2. Cowork の会話にこのファイルを添付（ドラッグ＆ドロップ）
+3. 表示される「Save skill」を押す（設定 → Capabilities に追加される）
 
 ### 手動（スキルだけ使う）
 `skills/business-idea-explorer/` をスキル読み込みディレクトリ（例：`~/.claude/skills/business-idea-explorer/`）にコピー。
