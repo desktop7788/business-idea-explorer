@@ -32,7 +32,7 @@
 この repo はプラグインマーケットプレイスとして公開されている。Claude Code で：
 
 ```
-/plugin marketplace add <あなたのGitHubユーザー名>/business-idea-explorer
+/plugin marketplace add desktop7788/business-idea-explorer
 /plugin install business-idea-explorer@tatsu-tools
 ```
 
